@@ -1,0 +1,12 @@
+<table>
+  <thead>
+    <th>id</th>
+    <th>name</th>
+  </thead>
+  {{#each model as |line|}}
+    <tr>
+      <td>{{line.id}}</td>
+      <td>{{line.name}}</td>
+    </tr>
+  {{/each}}
+</table>
