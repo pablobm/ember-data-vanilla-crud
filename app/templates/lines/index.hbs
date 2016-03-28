@@ -1,12 +1,15 @@
+<p>{{#link-to 'lines.new'}}New line{{/link-to}}</p>
 <table>
   <thead>
     <th>id</th>
     <th>name</th>
+    <th>&nbsp;</th>
   </thead>
   {{#each model as |line|}}
     <tr>
       <td>{{line.id}}</td>
       <td>{{line.name}}</td>
+      <td>{{#link-to 'lines.edit' line}}edit{{/link-to}}</td>
     </tr>
   {{/each}}
 </table>

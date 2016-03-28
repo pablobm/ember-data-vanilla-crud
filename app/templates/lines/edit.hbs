@@ -1,0 +1,10 @@
+{{#each model.errors.base as |error|}}
+  <p class="error">{{error.message}}</p>
+{{/each}}
+
+<p>{{input value=model.name placeholder="Name" name="name"}}</p>
+{{#each model.errors.name as |error|}}
+  <p class="error">{{error.message}}</p>
+{{/each}}
+
+<p><button {{action 'save' model}}>Update</button> or {{#link-to 'lines.index'}}Cancel{{/link-to}}</p>
