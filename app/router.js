@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('lines', function() {
     this.route('index', {path: '/'});
     this.route('new');
+    this.route('show', {path: ':id'});
     this.route('edit', {path: ':id/edit'});
   });
 });

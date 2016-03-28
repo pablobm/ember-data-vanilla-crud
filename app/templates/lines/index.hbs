@@ -9,7 +9,10 @@
     <tr>
       <td>{{line.id}}</td>
       <td>{{line.name}}</td>
-      <td>{{#link-to 'lines.edit' line}}edit{{/link-to}}</td>
+      <td>
+        {{#link-to 'lines.show' line}}view{{/link-to}}
+        {{#link-to 'lines.edit' line}}edit{{/link-to}}
+      </td>
     </tr>
   {{/each}}
 </table>
