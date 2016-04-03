@@ -14,7 +14,7 @@ export default Ember.Route.extend({
     willTransition() {
       const record = this.controller.get('model');
       if (record.get('isNew')) {
-        return this.store.unloadRecord(record);
+        this.store.unloadRecord(record);
       }
     },
   },
