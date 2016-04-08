@@ -8,7 +8,7 @@ export default Ember.Route.extend({
   actions: {
     save(record) {
       record.save()
-        .then(() => this.transitionTo('lines.index'));
+        .then(() => this.transitionTo('lines'));
     },
 
     willTransition() {
