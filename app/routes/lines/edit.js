@@ -12,6 +12,7 @@ export default Ember.Route.extend({
     },
 
     willTransition() {
+      this._super(...arguments);
       const record = this.controller.get('model');
       record.rollbackAttributes();
     },
