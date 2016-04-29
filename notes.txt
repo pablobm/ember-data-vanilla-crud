@@ -1,0 +1,13 @@
+* Does the "singleton controller" problem affect me here?
+* Add version compatibility badge
+* Closure actions?
+* Pods?
+* `:id` or `:model_id`?
+* Going offline
+* If you start in a view that loads several records, then go to `index`, the delayed `findAll` will, momentarily, only show the stored records
+* Difference between linking to model and model.id
+* Default implementation of `model()`
+* Guides recommend `rollbackAttributes`
+* Update link to guides
+* `loading` substate trumps the `loading` route
+* What if I trandition during a `loading` event?
