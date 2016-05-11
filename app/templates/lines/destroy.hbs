@@ -1,3 +1,5 @@
 <p>Are you sure?</p>
 
-<p><button {{action 'confirm' model}}>Delete <strong>{{model.name}}</strong></button> or {{#link-to 'lines'}}cancel{{/link-to}}</p>
+<form {{action 'confirm' model on='submit'}}>
+  <p><button>Delete <strong>{{model.name}}</strong></button> or {{#link-to 'lines'}}cancel{{/link-to}}</p>
+</form>
