@@ -14,9 +14,7 @@ export default Ember.Route.extend({
     willTransition() {
       this._super(...arguments);
       const record = this.controller.get('model');
-      if (record.get('isNew')) {
-        this.store.unloadRecord(record);
-      }
+      record.rollbackAttributes();
     },
   },
 });
