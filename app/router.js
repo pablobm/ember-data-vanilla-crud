@@ -10,9 +10,9 @@ Router.map(function() {
 
   this.route('lines', function() {
     this.route('new');
-    this.route('show', {path: ':id'});
-    this.route('edit', {path: ':id/edit'});
-    this.route('destroy', {path: ':id/destroy'});
+    this.route('show', {path: ':line_id'});
+    this.route('edit', {path: ':line_id/edit'});
+    this.route('destroy', {path: ':line_id/destroy'});
   });
 });
 
